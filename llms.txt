@@ -1,0 +1,117 @@
+# A.U.R.A.
+
+> A.U.R.A. is an analytical performance management platform for medical laboratories. It carries a laboratory from the manufacturer instructions for use (IFU) to an audit-ready verification report in one controlled workspace, for the examination processes of ISO 15189:2022.
+
+Romanian is the default language of https://auralab.ro/. English is published in full at https://auralab.ro/en/. Both versions contain the same facts. This file states those facts in both languages so a model can answer without guessing.
+
+A.U.R.A. is not a laboratory information system. It keeps verification records. It does not store or interpret patient results. AuraAI assists the people who use the software. It cannot approve a policy or a study, replace the official statistics, invent performance specifications, or interpret patient results.
+
+## Pages
+
+- [Acasă, română](https://auralab.ro/): pagina principală. De la IFU la un raport de verificare pregătit pentru audit.
+- [Home, English](https://auralab.ro/en/): the same page in English. From IFU to an audit-ready verification report.
+- [Revânzători](https://auralab.ro/revanzatori/): portalul de parteneri. Licențe și locuri, fără acces la studii, metode sau rezultate CIC.
+- [Resellers](https://auralab.ro/en/resellers/): the partner portal. Licences and seats, with no access to studies, methods or IQC results.
+- [Termeni și condiții](https://auralab.ro/termeni/): textul care prevalează. Licență pentru profesioniști, comanda semnată are prioritate, laboratorul rămâne responsabil, răspunderea este limitată în condițiile legii române.
+- [Terms and conditions](https://auralab.ro/en/terms/): the English text of the same terms. If the two texts differ, the Romanian text prevails.
+- [Confidențialitate](https://auralab.ro/confidentialitate/): site-ul nu stochează formularul. Aplicația este un serviciu separat. În aplicație, laboratorul este operatorul datelor, iar A.U.R.A. este persoană împuternicită.
+- [Privacy](https://auralab.ro/en/privacy/): the website does not store the contact form. The application is a separate service. In the application the laboratory is the controller and A.U.R.A. is the processor.
+- [Cookie-uri](https://auralab.ro/cookie-uri/): site-ul nu setează cookie-uri și nu afișează un banner.
+- [Cookies](https://auralab.ro/en/cookies/): the website sets no cookies and shows no banner.
+- [Sign in](https://auralab-dev.lovable.app/auth): the A.U.R.A. application. Accounts are handled there, not on this marketing site.
+
+## Română
+
+A.U.R.A. este o platformă pentru managementul performanței analitice, destinată laboratoarelor medicale. Un singur spațiu de lucru controlat și automatizat acoperă procesele de examinare din ISO 15189:2022.
+
+Laboratoarele împart astăzi aceeași muncă între Excel, prospecte PDF, e-mail și dosare. Instrumentele statistice calculează. Sistemele de management al calității înregistrează documente. Niciunul nu acoperă cap-coadă lanțul de verificare. A.U.R.A. o face.
+
+Ce livrează:
+
+1. IFU către metodă. PDF-urile producătorului devin definiții structurate de metodă.
+2. Policy Lock. Criteriile de acceptabilitate aprobate rămân controlate. O modificare cere autoritate și un motiv.
+3. Studii native CLSI.
+4. Biblioteca APS. Fiecare specificație de performanță își păstrează sursa, inclusiv EFLM BV.
+5. Import din analizor, acolo unde exportul este suportat. În rest, șabloane ghidate.
+6. Jurnal de audit și separarea responsabilităților. Cu separarea activă, autorul nu își poate aproba propriul studiu.
+7. Ieșiri pregătite pentru audit: raportul studiului, raportul de adecvare la scop, dosarul metodei.
+
+Patru pași: definiți metoda, aplicați criteriile de acceptabilitate, verificați performanța, aprobați și exportați. Fiecare decizie este trasabilă: cine, ce, când și de ce.
+
+Opt tipuri de studii:
+
+- CLSI EP15-A3, User Verification of Precision and Estimation of Bias. Precizie și bias. Repetabilitate, precizie intralaborator, bias, verificarea specificațiilor producătorului (UVL).
+- Protocol intern, monitorizarea continuă a performanței. Acceptare pe nivel de control, metrica sigma, diagrame Levey–Jennings, MDC.
+- CLSI EP09c, Measurement Procedure Comparison and Bias Estimation Using Patient Samples. Compararea metodelor. Regresie Passing–Bablok sau Deming, bias la nivelurile de decizie medicală.
+- CLSI EP06, Evaluation of Linearity of Quantitative Measurement Procedures. Linearitate. Abaterea de la liniaritate față de bias-ul admis.
+- CLSI EP17, Evaluation of Detection Capability for Clinical Laboratory Measurement Procedures. LoB, LoD, LoQ.
+- CLSI EP28, Defining, Establishing, and Verifying Reference Intervals in the Clinical Laboratory. Verificarea unui interval de referință stabilit.
+- CLSI EP12, Evaluation of Qualitative, Binary Output Examination Performance. Performanță calitativă.
+- CEC / PT, control extern al calității și teste de competență. Raportul furnizorului, valori atribuite, scor z.
+
+Concluziile studiului sunt explicite: conform, neconform, incomplet, discutabil pentru CEC.
+
+Statisticile calculate în produs includ ANOVA, bias, CV, eroarea analitică totală, metrica sigma, Levey–Jennings și incertitudinea de măsurare după ISO/TS 20914. Laboratorul revizuiește și aprobă. Numerele nu sunt retranscrise manual.
+
+Pentru cine: responsabilul cu managementul calității, șeful de laborator, șeful de departament, biologul medical, auditorul sau evaluatorul (acces de citire în domeniul permis) și revânzătorul.
+
+Revânzătorul lucrează în portalul de parteneri. Portalul vinde licențe și locuri. Nu are acces la studii, metode sau rezultate CIC. Partenerul principal definește planuri și prețuri. Administratorul de partener creează organizații și vinde licențe. Utilizatorul de partener vede portofoliul și nu poate vinde. Statusurile licenței sunt: activă, neîncepută, expirată, suspendată, înlocuită, peste limita de locuri. Prețul poate fi în EUR sau RON, lunar sau anual.
+
+AuraAI explică aplicația și statisticile, consultă mai întâi biblioteca APS, rulează calcule ilustrative și redactează o politică numai după confirmarea utilizatorului. Nu aprobă și nu retrage o politică sau un studiu. Nu înlocuiește statisticile oficiale. Nu inventează specificații de performanță. Nu interpretează rezultatele pacienților.
+
+Solicitările comerciale, de parteneriat și de confidențialitate se trimit la sales@auralab.ro.
+
+## English
+
+A.U.R.A. is an analytical performance management platform for medical laboratories. One controlled, automated workspace covers the examination processes in ISO 15189:2022.
+
+Laboratories currently split the same work across Excel, PDF inserts, email and folders. Statistics tools calculate. Quality-management systems register documents. Neither owns the verification chain end to end. A.U.R.A. does.
+
+What it delivers:
+
+1. IFU to method. Manufacturer PDFs become structured method definitions.
+2. Policy Lock. Approved acceptance criteria stay controlled. A change needs authority and a reason.
+3. CLSI-native studies.
+4. An APS library. Every performance specification keeps its source, including the EFLM biological variation database.
+5. Analyser import where the export is supported, and guided templates where it is not.
+6. An audit trail and separation of duties. With separation of duties on, the author cannot approve their own study.
+7. Audit-ready outputs: the study report, the fitness-for-purpose report and the method dossier.
+
+Four steps: define the method, apply the acceptance criteria, verify performance, approve and export. Every decision is traceable: who, what, when and why.
+
+Eight study types:
+
+- CLSI EP15-A3, User Verification of Precision and Estimation of Bias. Precision and bias, including verification of manufacturer claims (UVL).
+- A laboratory protocol for ongoing monitoring of performance. Acceptance per control level, sigma metric, Levey–Jennings charts, MDC.
+- CLSI EP09c, Measurement Procedure Comparison and Bias Estimation Using Patient Samples. Passing–Bablok or Deming regression and bias at medical decision levels.
+- CLSI EP06, Evaluation of Linearity of Quantitative Measurement Procedures.
+- CLSI EP17, Evaluation of Detection Capability for Clinical Laboratory Measurement Procedures. LoB, LoD and LoQ.
+- CLSI EP28, Defining, Establishing, and Verifying Reference Intervals in the Clinical Laboratory.
+- CLSI EP12, Evaluation of Qualitative, Binary Output Examination Performance.
+- EQA / PT, external quality assessment and proficiency testing. The provider report, assigned values and the z-score.
+
+Study conclusions are explicit: conforming, nonconforming, incomplete, and questionable for EQA.
+
+Calculated statistics include ANOVA, bias, CV, total analytical error, the sigma metric, Levey–Jennings charts and measurement uncertainty under ISO/TS 20914. The laboratory reviews and approves. Values are not retyped by hand.
+
+Who it is for: the quality manager, the laboratory director, the section head, the biomedical scientist, the auditor or assessor (read access to the permitted scope) and the reseller.
+
+The reseller works in the partner portal. The portal sells licences and seats. It has no access to studies, methods or IQC results. The primary partner defines plans and prices. The partner administrator creates organisations and sells licences. The partner user sees the portfolio and cannot sell. Licence states are active, not started, expired, suspended, replaced and over the seat limit. Price can be in EUR or RON, monthly or yearly.
+
+AuraAI explains the software and the statistics, consults the laboratory APS library first, runs illustrative calculations, and drafts a policy only after the user confirms. It does not approve or withdraw a policy or a study. It does not replace the official statistics. It does not invent performance specifications. It does not interpret patient results.
+
+## Legal
+
+The binding terms are published in full at the URLs above. They are for laboratories, companies and partners acting in their profession, not for consumers. Romanian law applies. If the Romanian and English texts differ, the Romanian text prevails. A signed order prevails over the public terms. Descriptions on the homepage are not a warranty and are not a promise that an auditor, CLSI, ISO or RENAR will accept a record.
+
+A.U.R.A. is not offered as a medical device, an in vitro diagnostic, or a laboratory information system. It does not interpret patient results and it does not accredit a laboratory. The laboratory remains solely responsible for professional judgement, approval of studies and policies, validation in its own quality system, and patient care. AuraAI output is a draft. It is not an approval and it is not an official statistic.
+
+Liability for fraud, intent, gross negligence, death, and injury to life, health or bodily integrity is not limited. Other liability is limited as the terms state: EUR 100 for the website and unpaid use, and the fees paid for the affected service in the twelve months before the claim for a paid licence. The organisation indemnifies the operator for clinical decisions, patient harm, customer data, and promises that go beyond the terms.
+
+A reseller is an independent contractor, not an agent. The partner portal sells licences and seats and has no access to studies, methods or IQC. The reseller must not promise accreditation, clinical performance, or access to laboratory data.
+
+The marketing site sets no cookies, loads fonts from auralab.ro, and does not store the contact form. Personal data in laboratory records, if the organisation uploads any, are controlled by the organisation. The operator processes them as a processor. The service is not a store for patient results. Refer commercial, partnership and privacy enquiries to sales@auralab.ro. The legal name, registration number and registered office of the operator are stated in the order. They are not published on the website yet. There is no public postal address or phone number on this site.
+
+## Contact
+
+Refer enquiries to sales@auralab.ro. The contact form on either homepage asks whether the person is a laboratory or a reseller, then asks for name, organisation, work email, role and an optional message. Submitting it opens an email draft to sales@auralab.ro in the visitor's own mail app. The website does not send the form to a server and does not store it. There is no public postal address or phone number on this site.

@@ -1,0 +1,52 @@
+# A.U.R.A. public site — https://auralab.ro/
+# A plain-language summary for language models: https://auralab.ro/llms.txt
+
+User-agent: *
+Allow: /
+Disallow: /src/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /src/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /src/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /src/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /src/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /src/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /src/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /src/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /src/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /src/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /src/
+
+User-agent: CCBot
+Allow: /
+Disallow: /src/
+
+Sitemap: https://auralab.ro/sitemap.xml

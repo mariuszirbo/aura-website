@@ -2,3 +2,9 @@
 .env
 .env.*
 *.local
+.vercel
+__pycache__/
+*.pyc
+tools/fonts/InterTight-500.ttf
+tools/fonts/InterTight-560.ttf
+tools/fonts/InterTight-700.ttf
