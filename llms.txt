@@ -57,7 +57,7 @@ Pentru cine: responsabilul cu managementul calității, șeful de laborator, șe
 
 Revânzătorul lucrează în portalul de parteneri. Portalul vinde licențe și locuri. Nu are acces la studii, metode sau rezultate CIC. Partenerul principal definește planuri și prețuri. Administratorul de partener creează organizații și vinde licențe. Utilizatorul de partener vede portofoliul și nu poate vinde. Statusurile licenței sunt: activă, neîncepută, expirată, suspendată, înlocuită, peste limita de locuri. Prețul poate fi în EUR sau RON, lunar sau anual.
 
-AuraAI explică aplicația și statisticile, consultă mai întâi biblioteca APS, rulează calcule ilustrative și redactează o politică numai după confirmarea utilizatorului. Nu aprobă și nu retrage o politică sau un studiu. Nu înlocuiește statisticile oficiale. Nu inventează specificații de performanță. Nu interpretează rezultatele pacienților.
+Ce face AuraAI: explică aplicația și statisticile folosite într-un studiu; consultă biblioteca APS a laboratorului înainte de a propune o specificație; rulează calcule ilustrative, care nu sunt rezultatul oficial al studiului; redactează o politică numai după ce utilizatorul confirmă conținutul. Ce nu face AuraAI: nu aprobă și nu retrage o politică sau un studiu; nu înlocuiește statisticile oficiale calculate de aplicație; nu inventează specificații de performanță care nu există în biblioteca APS; nu interpretează rezultatele pacienților și nu formulează o opinie clinică.
 
 Solicitările comerciale, de parteneriat și de confidențialitate se trimit la sales@auralab.ro.
 
@@ -98,7 +98,7 @@ Who it is for: the quality manager, the laboratory director, the section head, t
 
 The reseller works in the partner portal. The portal sells licences and seats. It has no access to studies, methods or IQC results. The primary partner defines plans and prices. The partner administrator creates organisations and sells licences. The partner user sees the portfolio and cannot sell. Licence states are active, not started, expired, suspended, replaced and over the seat limit. Price can be in EUR or RON, monthly or yearly.
 
-AuraAI explains the software and the statistics, consults the laboratory APS library first, runs illustrative calculations, and drafts a policy only after the user confirms. It does not approve or withdraw a policy or a study. It does not replace the official statistics. It does not invent performance specifications. It does not interpret patient results.
+What AuraAI does: it explains the application and the statistics used in a study; it consults the laboratory APS library before a specification is proposed; it runs illustrative calculations, which are not the official study result; it drafts a policy only after the user confirms the content. What AuraAI does not do: it does not approve or withdraw a policy or a study; it does not replace the official statistics produced by the application; it does not invent performance specifications absent from the APS library; it does not interpret patient results or offer a clinical opinion.
 
 ## Legal
 
