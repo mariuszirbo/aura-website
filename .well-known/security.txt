@@ -1,0 +1,5 @@
+Contact: mailto:sales@auralab.ro
+Expires: 2027-11-17T22:00:00.000Z
+Canonical: https://auralab.ro/.well-known/security.txt
+Preferred-Languages: ro, en
+Policy: https://auralab.ro/confidentialitate/

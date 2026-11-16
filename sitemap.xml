@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://auralab.ro/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/en/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/confidentialitate/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/confidentialitate/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/confidentialitate/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/en/privacy/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/confidentialitate/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/confidentialitate/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/termeni/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/termeni/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/termeni/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/en/terms/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/termeni/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/termeni/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/cookie-uri/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/cookie-uri/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/cookie-uri/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/en/cookies/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/cookie-uri/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/cookie-uri/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/revanzatori/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/revanzatori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/resellers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/revanzatori/"/>
+  </url>
+  <url>
+    <loc>https://auralab.ro/en/resellers/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://auralab.ro/revanzatori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auralab.ro/en/resellers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auralab.ro/revanzatori/"/>
+  </url>
+</urlset>
