@@ -76,17 +76,23 @@
     return subjectNode ? subjectNode.textContent.trim() : (form.getAttribute("data-mail-subject") || "A.U.R.A.");
   }
 
-  function showThanks(thanks, sent) {
+  function showThanks(thanks, sent, email, confirmed) {
     const title = thanks.querySelector("[data-thanks-title]");
     const body = thanks.querySelector("[data-thanks-body]");
-    const titleSrc = thanks.querySelector(sent ? "[data-thanks-sent-title]" : "[data-thanks-draft-title]");
-    const bodySrc = thanks.querySelector(sent ? "[data-thanks-sent-body]" : "[data-thanks-draft-body]");
+    const titleKey = sent ? "[data-thanks-sent-title]" : "[data-thanks-draft-title]";
+    const bodyKey = sent ? (confirmed ? "[data-thanks-sent-body]" : "[data-thanks-sent-nomail]") : "[data-thanks-draft-body]";
+    const titleSrc = thanks.querySelector(titleKey);
+    const bodySrc = thanks.querySelector(bodyKey);
     if (title && titleSrc) title.textContent = titleSrc.textContent.trim();
-    if (body && bodySrc) body.textContent = bodySrc.textContent.trim();
+    if (body && bodySrc) body.textContent = bodySrc.textContent.trim().replace("{{email}}", email || "");
+    thanks.classList.toggle("is-sent", !!sent);
+    thanks.classList.remove("is-in");
+    void thanks.offsetWidth;
+    thanks.classList.add("is-in");
   }
 
   function openDraft(form, thanks, lines) {
-    showThanks(thanks, false);
+    showThanks(thanks, false, "", false);
     form.hidden = true;
     thanks.hidden = false;
     const subject = subjectOf(form);
@@ -105,23 +111,30 @@
     const emailField = form.querySelector('[name="email"]');
     const nameField = form.querySelector('[name="name"]');
     const trap = form.querySelector('[name="hp_field"]');
+    const email = emailField ? emailField.value.trim() : "";
     const payload = {
       name: nameField ? nameField.value : "",
-      email: emailField ? emailField.value : "",
+      email: email,
       subject: subjectOf(form),
       text: lines.join("\n"),
+      lang: document.documentElement.lang === "ro" ? "ro" : "en",
       hp_field: trap ? trap.value : ""
     };
+    form.classList.add("is-sending");
     fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify(payload)
     }).then(function (response) {
       if (!response.ok) throw new Error("send");
-      showThanks(thanks, true);
+      return response.json();
+    }).then(function (data) {
+      form.classList.remove("is-sending");
+      showThanks(thanks, true, email, !!(data && data.confirmed));
       form.hidden = true;
       thanks.hidden = false;
     }).catch(function () {
+      form.classList.remove("is-sending");
       openDraft(form, thanks, lines);
     });
   }
@@ -138,7 +151,9 @@
     if (edit) {
       edit.addEventListener("click", function () {
         thanks.hidden = true;
+        thanks.classList.remove("is-sent", "is-in");
         form.hidden = false;
+        form.classList.remove("is-sending");
         const button = form.querySelector('[type="submit"]');
         if (button) button.disabled = false;
         delete form.dataset.sending;
@@ -183,4 +198,5 @@
     calc.addEventListener("change", updateEstimate);
     updateEstimate();
   }
+  window.__auraMail = 2;
 })();
