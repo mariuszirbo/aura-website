@@ -280,12 +280,29 @@
 <div>
 <p class="eyebrow">AUDIT TRAIL</p>
 <h2 class="h2 balance">Every decision leaves a trace.</h2>
-<div class="g2s audit-grid">
-<div class="audit-word">Who</div>
-<div class="audit-word">What</div>
-<div class="audit-word">When</div>
-<div class="audit-word why">Why</div>
-</div>
+<p class="audit-example">Example</p>
+<ol class="audit-log">
+<li>
+<time>19.09.2026 · 08:33</time>
+<strong>Purpose-suitability report exported</strong>
+<span>Technical staff · Report</span>
+</li>
+<li class="audit-hot">
+<time>10.08.2026 · 23:24</time>
+<strong>Study approved</strong>
+<span>Quality manager · Precision study</span>
+</li>
+<li>
+<time>10.08.2026 · 23:01</time>
+<strong>Measurement-uncertainty list exported</strong>
+<span>Quality manager · Report</span>
+</li>
+<li>
+<time>08.08.2026 · 19:26</time>
+<strong>Study finalised</strong>
+<span>Quality manager · Study</span>
+</li>
+</ol>
 </div>
 <div class="shot shot-line">
 <picture>
@@ -300,27 +317,47 @@
 <section id="auraai" class="sec ai">
 <img class="watermark ai-watermark" src="/assets/aura-symbol-white.png" alt="" width="256" height="248">
 <div class="wrap">
+<div class="ai-intro">
+<div>
 <p class="eyebrow">AURAAI</p>
-<h2 class="h2 balance">Assists the laboratory. Never replaces it.</h2>
-<div class="g2 ai-grid">
-<div class="ai-card">
-<h3 class="ai-label">What AuraAI does</h3>
-<ul class="ai-list">
-<li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Explains the application and the statistics used in a study.</span></li>
-<li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Consults the laboratory APS library before a specification is proposed.</span></li>
-<li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Runs illustrative calculations. These are not the official study result.</span></li>
-<li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Drafts a policy only after the user confirms the content.</span></li>
-</ul>
+<h2 class="h2 balance">AuraAI assists the laboratory.</h2>
+<p class="lead ai-lead">AuraAI works inside the application, beside the study that is open. It explains the method and the statistics, takes a specification from the laboratory APS library, shows an illustrative calculation, and drafts a policy once the user confirms the wording. The laboratory reviews the draft. The official result remains the one the application calculates.</p>
 </div>
-<div class="ai-card ai-card-dark">
-<h3 class="ai-label">What AuraAI does not do</h3>
-<ul class="ai-list">
-<li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg><span>Does not approve or withdraw a policy or a study.</span></li>
-<li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg><span>Does not replace the official statistics produced by the application.</span></li>
-<li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg><span>Does not invent performance specifications absent from the APS library.</span></li>
-<li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg><span>Does not interpret patient results or offer a clinical opinion.</span></li>
-</ul>
+<div class="ai-thread">
+<div class="ai-thread-bar">
+<svg class="ai-orb" viewBox="0 0 120 120" width="36" height="36" aria-hidden="true"><circle class="ai-orb-ring" cx="60" cy="60" r="46"></circle><circle class="ai-orb-ring ai-orb-ring-2" cx="60" cy="60" r="30"></circle><circle class="ai-orb-core" cx="60" cy="60" r="8"></circle><circle class="ai-orb-dot" cx="60" cy="14" r="4.5"></circle></svg>
+<span class="ai-name">AuraAI</span>
+<span class="ai-example">Example</span>
 </div>
+<p class="ai-who">You</p>
+<p class="ai-bubble user">Which statistic is this study using, and where does the specification come from?</p>
+<p class="ai-who">AuraAI</p>
+<p class="ai-bubble">This study uses CLSI EP15-A3. The specification is the one already in your APS library. I can draft the policy when you confirm the wording.</p>
+<ul class="ai-sources">
+<li>APS library</li>
+<li>CLSI EP15-A3</li>
+<li>Policy draft</li>
+</ul>
+<p class="ai-chip">Policy draft · waiting for confirmation</p>
+</div>
+</div>
+<div class="g2 ai-points">
+<article class="ai-point">
+<h3>Explains the study</h3>
+<p>It answers from the study that is open: the method, the statistic in use, and how that statistic is applied in this verification.</p>
+</article>
+<article class="ai-point">
+<h3>Starts in the APS library</h3>
+<p>A specification is proposed only after AuraAI has consulted the laboratory APS library. The proposal is a specification the laboratory already holds.</p>
+</article>
+<article class="ai-point">
+<h3>Illustrates the figure</h3>
+<p>It runs the calculation so the user can see the shape of the result. The figure is an illustration for the conversation. It is not written in as the official study result.</p>
+</article>
+<article class="ai-point">
+<h3>Drafts the policy</h3>
+<p>It writes the policy in the laboratory&#x27;s terms. The draft waits until the user confirms the content. The people who approve a policy keep that decision.</p>
+</article>
 </div>
 </div>
 </section>
