@@ -160,5 +160,67 @@
     }
   });
 
+  function revealOnScroll() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!("IntersectionObserver" in window)) return;
+    document.documentElement.classList.add("motion");
+    var singles = [
+      ".problem h2", ".punch", ".center-head",
+      ".how .eyebrow", ".how h2", ".how .note", ".how .shot",
+      ".band-navy .eyebrow", ".band-navy h2", ".band-navy .lead",
+      ".audit .eyebrow", ".audit h2", ".audit-example", ".audit .shot",
+      ".ai-intro > div:first-child",
+      ".contact .split > div",
+      ".org-card", ".sell", ".reseller-cta",
+      ".quote .eyebrow", ".quote h2", ".quote-lead", ".quote .wrap > [data-mail-panel]"
+    ];
+    var groups = [
+      ".problem-grid", ".product-grid", ".steps", ".study-grid", ".verdicts",
+      ".stat-row", ".audit-log", ".ai-points", ".role-grid",
+      ".mini-grid", ".sell-grid", ".status-row", ".partner-grid", ".boundary",
+      ".boundary-light .chips", ".boundary-dark .chips"
+    ];
+    var nodes = [];
+    function addNode(el, index) {
+      el.classList.add("rise");
+      if (index > 0 && index < 8) el.classList.add("d" + index);
+      nodes.push(el);
+    }
+    singles.forEach(function (selector) {
+      document.querySelectorAll(selector).forEach(function (el) { addNode(el, 0); });
+    });
+    groups.forEach(function (selector) {
+      document.querySelectorAll(selector).forEach(function (group) {
+        Array.prototype.forEach.call(group.children, function (child, index) {
+          if (child.nodeType === 1) addNode(child, index);
+        });
+      });
+    });
+    function shown(el) {
+      var rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight * 0.9 && rect.bottom > 32;
+    }
+    var pending = [];
+    nodes.forEach(function (el) {
+      if (shown(el)) el.classList.add("is-in");
+      else pending.push(el);
+    });
+    var thread = document.querySelector(".ai-thread");
+    if (thread && shown(thread)) thread.classList.add("ai-play");
+    if (!pending.length && (!thread || thread.classList.contains("ai-play"))) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        if (entry.target.classList.contains("ai-thread")) entry.target.classList.add("ai-play");
+        else entry.target.classList.add("is-in");
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.01 });
+    pending.forEach(function (el) { observer.observe(el); });
+    if (thread && !thread.classList.contains("ai-play")) observer.observe(thread);
+  }
+
+  revealOnScroll();
+
   window.__auraMail = 2;
 })();
