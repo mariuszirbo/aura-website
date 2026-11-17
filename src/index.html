@@ -354,7 +354,10 @@
 <p class="lead" data-i18n="contact.lead">A demonstration, a technical sheet, and a licence sized to your laboratory.</p>
 <p class="contact-mail"><span data-i18n="contact.refer">Refer enquiries to</span> <a href="mailto:sales@auralab.ro">sales@auralab.ro</a>.</p>
 </div>
+<div data-mail-panel>
 <form id="contact-form" class="form-grid" method="post" action="mailto:sales@auralab.ro" enctype="text/plain">
+<span class="sr-only" data-mail-subject-text data-i18n="form.subject">A.U.R.A. — demo request</span>
+<span class="sr-only" data-who-label-text data-i18n="form.who">Audience</span>
 <div class="seg full">
 <label><input type="radio" name="who" value="laboratory" checked><span data-i18n="form.lab">Laboratory</span></label>
 <label><input type="radio" name="who" value="reseller"><span data-i18n="form.reseller">Reseller</span></label>
@@ -373,14 +376,20 @@
 </select>
 </label>
 <label class="field full"><span data-i18n="form.message">Message</span><textarea name="message" rows="3" data-i18n-placeholder="form.message.ph" placeholder="Studies you prioritise, number of methods…"></textarea></label>
+<label hidden>Company<input name="hp_field" type="text" tabindex="-1" autocomplete="off"></label>
 <p class="form-legal full"><span data-i18n="form.legal">This request is not an order. You confirm that you act for an organisation and accept the</span> <a href="#pair-terms" data-i18n="form.terms">Terms</a> <span data-i18n="form.legal.and">and the</span> <a href="#pair-privacy" data-i18n="form.privacy">Privacy notice</a><span data-i18n="form.legal.end">.</span></p>
 <button class="btn-dark full" type="submit" data-i18n="form.submit">Contact the commercial team</button>
 </form>
 <div id="contact-thanks" class="thanks" hidden>
-<h3 data-i18n="form.thanks.title">Your request is ready to send</h3>
-<p data-i18n="form.thanks.body">Your email app should open with this message filled in. Nothing is stored on this website. If the draft does not open, copy the text below.</p>
+<h3 data-thanks-title data-i18n="form.thanks.title">Your request is ready to send</h3>
+<p data-thanks-body data-i18n="form.thanks.body">Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</p>
+<span hidden data-thanks-draft-title data-i18n="form.thanks.title">Your request is ready to send</span>
+<span hidden data-thanks-draft-body data-i18n="form.thanks.body">Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</span>
+<span hidden data-thanks-sent-title data-i18n="form.thanks.sent.title">Your request was sent</span>
+<span hidden data-thanks-sent-body data-i18n="form.thanks.sent.body">It was sent to sales@auralab.ro. This website does not keep a copy. The text below is what was sent.</span>
 <pre></pre>
 <button type="button" class="btn-dark" data-edit data-i18n="form.thanks.edit">Edit message</button>
+</div>
 </div>
 </div>
 </div>

@@ -127,9 +127,119 @@
 <article class="partner"><p class="kicker" data-i18n="res.user">PARTNER USER</p><h3 data-i18n="res.user.b">Sees the portfolio</h3></article>
 </div>
 <div class="reseller-cta">
-<a class="btn btn-light" href="index.html#contact" data-i18n="res.become">Become a partner</a>
-<a class="text-link" href="index.html#contact" data-i18n="res.talk">Talk to the partner team ›</a>
+<a class="btn btn-light" href="#presentation" data-i18n="res.become">Become a partner</a>
+<a class="text-link" href="#estimate" data-i18n="calc.link">Estimate a licence ›</a>
+<a class="text-link" href="#presentation" data-i18n="res.talk">Talk to the partner team ›</a>
 <p class="reseller-mail"><span data-i18n="contact.refer">Refer enquiries to</span> <a href="mailto:sales@auralab.ro">sales@auralab.ro</a>.</p>
+</div>
+</div>
+</section>
+
+<section id="estimate" class="sec quote">
+<div class="wrap">
+<p class="eyebrow" data-i18n="calc.eyebrow">LICENCE ESTIMATE</p>
+<h2 class="h2 balance" data-i18n="calc.title">Calculate the licence cost.</h2>
+<p class="lead quote-lead" data-i18n="calc.lead">Enter the months, the users, the reports and the rates for this proposal. This website does not publish a price. The result is an estimate for the commercial conversation, not an order.</p>
+<div data-mail-panel>
+<form id="estimate-form" class="quote-form" method="post" action="mailto:sales@auralab.ro" enctype="text/plain">
+<span class="sr-only" data-mail-subject-text data-i18n="calc.subject">A.U.R.A. — licence estimate</span>
+<span class="sr-only" data-calc-empty data-i18n="calc.empty">Enter a unit rate to see the total.</span>
+<div class="calc">
+<div class="calc-fields">
+<label class="field"><span data-i18n="calc.months">Months</span><input name="months" type="number" min="1" step="1" value="12" required inputmode="numeric"></label>
+<label class="field"><span data-i18n="calc.users">Users</span><input name="users" type="number" min="1" step="1" value="5" required inputmode="numeric"></label>
+<label class="field"><span data-i18n="calc.reports">Reports</span><input name="reports" type="number" min="0" step="1" value="0" required inputmode="numeric"></label>
+<fieldset class="field">
+<legend data-i18n="calc.currency">Currency</legend>
+<div class="seg">
+<label><input type="radio" name="currency" value="EUR" checked><span>EUR</span></label>
+<label><input type="radio" name="currency" value="RON"><span>RON</span></label>
+</div>
+</fieldset>
+<label class="field"><span data-i18n="calc.rateUser">Price per user, per month</span><input name="rateUser" type="number" min="0" step="0.01" inputmode="decimal"></label>
+<label class="field"><span data-i18n="calc.rateReport">Price per report</span><input name="rateReport" type="number" min="0" step="0.01" inputmode="decimal"></label>
+</div>
+<div class="calc-result">
+<p class="calc-kicker" id="calc-total-label" data-i18n="calc.total">Estimated total</p>
+<p class="calc-total" id="calc-total" aria-live="polite">—</p>
+<p class="calc-sub"><span id="calc-month-label" data-i18n="calc.perMonth">Per month</span> <strong id="calc-month">—</strong></p>
+<p class="calc-formula" data-i18n="calc.formula">Users × months × the price per user per month, plus reports × the price per report.</p>
+</div>
+</div>
+<input type="hidden" name="total" aria-labelledby="calc-total-label">
+<input type="hidden" name="perMonth" aria-labelledby="calc-month-label">
+<p class="calc-note" data-i18n="calc.note">The rates are the ones you enter. A blank rate counts as zero only after the other rate is filled in. The estimate is not an offer and not an order.</p>
+<div class="form-grid quote-contact">
+<label class="field"><span data-i18n="form.name">Name</span><input name="name" type="text" autocomplete="name" required data-i18n-placeholder="form.name.ph" placeholder="Full name"></label>
+<label class="field"><span data-i18n="form.org">Organisation</span><input name="organisation" type="text" autocomplete="organization" required data-i18n-placeholder="form.org.ph" placeholder="Laboratory or company"></label>
+<label class="field"><span data-i18n="form.email">Work email</span><input name="email" type="email" autocomplete="email" required data-i18n-placeholder="form.email.ph" placeholder="name@organisation.com"></label>
+<label class="field full"><span data-i18n="form.message">Message</span><textarea name="message" rows="3" data-i18n-placeholder="deck.message.ph" placeholder="Laboratories you cover, number of seats, technical questions…"></textarea></label>
+<label hidden>Company<input name="hp_field" type="text" tabindex="-1" autocomplete="off"></label>
+<p class="form-legal full"><span data-i18n="form.legal">This request is not an order. You confirm that you act for an organisation and accept the</span> <a href="#pair-terms" data-i18n="form.terms">Terms</a> <span data-i18n="form.legal.and">and the</span> <a href="#pair-privacy" data-i18n="form.privacy">Privacy notice</a><span data-i18n="form.legal.end">.</span></p>
+<button class="btn-dark full" type="submit" data-i18n="calc.submit">Send this estimate to sales</button>
+</div>
+</form>
+<div class="thanks" hidden>
+<h3 data-thanks-title data-i18n="form.thanks.title">Your request is ready to send</h3>
+<p data-thanks-body data-i18n="form.thanks.body">Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</p>
+<span hidden data-thanks-draft-title data-i18n="form.thanks.title">Your request is ready to send</span>
+<span hidden data-thanks-draft-body data-i18n="form.thanks.body">Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</span>
+<span hidden data-thanks-sent-title data-i18n="form.thanks.sent.title">Your request was sent</span>
+<span hidden data-thanks-sent-body data-i18n="form.thanks.sent.body">It was sent to sales@auralab.ro. This website does not keep a copy. The text below is what was sent.</span>
+<pre></pre>
+<button type="button" class="btn-dark" data-edit data-i18n="form.thanks.edit">Edit message</button>
+</div>
+</div>
+</div>
+</section>
+
+<section id="presentation" class="sec contact">
+<img class="watermark contact-watermark" src="assets/aura-symbol-white.png" alt="" width="256" height="248">
+<div class="wrap">
+<div class="split">
+<div>
+<p class="eyebrow" data-i18n="deck.eyebrow">TECHNICAL PRESENTATION</p>
+<h2 class="h2 balance" data-i18n="deck.title">Request the technical presentation.</h2>
+<p class="lead" data-i18n="deck.lead">For resellers and partners. The commercial team sends the presentation to the address you give. The request is not an order.</p>
+<p class="contact-mail"><span data-i18n="contact.refer">Refer enquiries to</span> <a href="mailto:sales@auralab.ro">sales@auralab.ro</a>.</p>
+</div>
+<div data-mail-panel>
+<form id="deck-form" class="form-grid" method="post" action="mailto:sales@auralab.ro" enctype="text/plain">
+<span class="sr-only" data-mail-subject-text data-i18n="deck.subject">A.U.R.A. — technical presentation</span>
+<span class="sr-only" data-who-label-text data-i18n="form.who">Audience</span>
+<div class="seg full">
+<label><input type="radio" name="who" value="laboratory"><span data-i18n="form.lab">Laboratory</span></label>
+<label><input type="radio" name="who" value="reseller" checked><span data-i18n="form.reseller">Reseller</span></label>
+</div>
+<label class="field"><span data-i18n="form.name">Name</span><input name="name" type="text" autocomplete="name" required data-i18n-placeholder="form.name.ph" placeholder="Full name"></label>
+<label class="field"><span data-i18n="form.org">Organisation</span><input name="organisation" type="text" autocomplete="organization" required data-i18n-placeholder="form.org.ph" placeholder="Laboratory or company"></label>
+<label class="field"><span data-i18n="form.email">Work email</span><input name="email" type="email" autocomplete="email" required data-i18n-placeholder="form.email.ph" placeholder="name@organisation.com"></label>
+<label class="field"><span data-i18n="form.role">Role</span>
+<select name="role">
+<option value="res" selected data-i18n="form.role.res">Reseller / partner</option>
+<option value="qm" data-i18n="form.role.qm">Quality manager</option>
+<option value="dir" data-i18n="form.role.dir">Laboratory director</option>
+<option value="head" data-i18n="form.role.head">Section head</option>
+<option value="sci" data-i18n="form.role.sci">Biomedical scientist</option>
+<option value="other" data-i18n="form.role.other">Other</option>
+</select>
+</label>
+<label class="field full"><span data-i18n="form.message">Message</span><textarea name="message" rows="3" data-i18n-placeholder="deck.message.ph" placeholder="Laboratories you cover, number of seats, technical questions…"></textarea></label>
+<label hidden>Company<input name="hp_field" type="text" tabindex="-1" autocomplete="off"></label>
+<p class="form-legal full"><span data-i18n="form.legal">This request is not an order. You confirm that you act for an organisation and accept the</span> <a href="#pair-terms" data-i18n="form.terms">Terms</a> <span data-i18n="form.legal.and">and the</span> <a href="#pair-privacy" data-i18n="form.privacy">Privacy notice</a><span data-i18n="form.legal.end">.</span></p>
+<button class="btn-dark full" type="submit" data-i18n="deck.submit">Request the presentation</button>
+</form>
+<div class="thanks" hidden>
+<h3 data-thanks-title data-i18n="form.thanks.title">Your request is ready to send</h3>
+<p data-thanks-body data-i18n="form.thanks.body">Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</p>
+<span hidden data-thanks-draft-title data-i18n="form.thanks.title">Your request is ready to send</span>
+<span hidden data-thanks-draft-body data-i18n="form.thanks.body">Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</span>
+<span hidden data-thanks-sent-title data-i18n="form.thanks.sent.title">Your request was sent</span>
+<span hidden data-thanks-sent-body data-i18n="form.thanks.sent.body">It was sent to sales@auralab.ro. This website does not keep a copy. The text below is what was sent.</span>
+<pre></pre>
+<button type="button" class="btn-dark" data-edit data-i18n="form.thanks.edit">Edit message</button>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -151,7 +261,7 @@
 <div>
 <strong data-i18n="footer.partners">Partners</strong>
 <a href="#pair-resellers" aria-current="page" data-i18n="footer.resellers">Resellers</a>
-<a href="index.html#contact" data-i18n="footer.become">Become a partner</a>
+<a href="#presentation" data-i18n="footer.become">Become a partner</a>
 </div>
 <div>
 <strong data-i18n="footer.company">Company</strong>

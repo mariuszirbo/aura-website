@@ -379,7 +379,10 @@
 <p class="lead">O demonstrație, o fișă tehnică și o licență dimensionată pentru laboratorul dumneavoastră.</p>
 <p class="contact-mail"><span>Adresa pentru solicitări:</span> <a href="mailto:sales@auralab.ro">sales@auralab.ro</a>.</p>
 </div>
+<div data-mail-panel>
 <form id="contact-form" class="form-grid" method="post" action="mailto:sales@auralab.ro" enctype="text/plain" data-mail-subject="A.U.R.A. — cerere de demonstrație" data-who-label="Pentru">
+<span class="sr-only" data-mail-subject-text>A.U.R.A. — cerere de demonstrație</span>
+<span class="sr-only" data-who-label-text>Pentru</span>
 <div class="seg full">
 <label><input type="radio" name="who" value="laboratory" checked><span>Laborator</span></label>
 <label><input type="radio" name="who" value="reseller"><span>Revânzător</span></label>
@@ -398,14 +401,20 @@
 </select>
 </label>
 <label class="field full"><span>Mesaj</span><textarea name="message" rows="3" placeholder="Studiile pe care le prioritizați, numărul de metode…"></textarea></label>
+<label hidden>Company<input name="hp_field" type="text" tabindex="-1" autocomplete="off"></label>
 <p class="form-legal full"><span>Cererea nu este o comandă. Confirmați că acționați pentru o organizație și acceptați</span> <a href="/termeni/">Termenii</a> <span>și</span> <a href="/confidentialitate/">politica de confidențialitate</a><span>.</span></p>
 <button class="btn-dark full" type="submit">Contactați echipa comercială</button>
 </form>
 <div id="contact-thanks" class="thanks" hidden>
-<h3>Cererea este gata de trimis</h3>
-<p>Aplicația de e-mail ar trebui să deschidă o ciornă către sales@auralab.ro. Site-ul nu păstrează nimic. Dacă ciorna nu se deschide, copiați textul de mai jos și trimiteți-l la sales@auralab.ro.</p>
+<h3 data-thanks-title>Cererea este gata de trimis</h3>
+<p data-thanks-body>Aplicația de e-mail ar trebui să deschidă o ciornă către sales@auralab.ro. Site-ul nu păstrează nimic. Dacă ciorna nu se deschide, copiați textul de mai jos și trimiteți-l la sales@auralab.ro.</p>
+<span hidden data-thanks-draft-title>Cererea este gata de trimis</span>
+<span hidden data-thanks-draft-body>Aplicația de e-mail ar trebui să deschidă o ciornă către sales@auralab.ro. Site-ul nu păstrează nimic. Dacă ciorna nu se deschide, copiați textul de mai jos și trimiteți-l la sales@auralab.ro.</span>
+<span hidden data-thanks-sent-title>Cererea a fost trimisă</span>
+<span hidden data-thanks-sent-body>A fost trimisă la sales@auralab.ro. Site-ul nu păstrează o copie. Mai jos este textul trimis.</span>
 <pre></pre>
 <button type="button" class="btn-dark" data-edit>Modificați mesajul</button>
+</div>
 </div>
 </div>
 </div>
