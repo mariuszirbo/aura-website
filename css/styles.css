@@ -456,8 +456,14 @@ a{color:var(--primary);text-decoration:none}
 }
 .calc-kicker{margin:0;font:500 12px "IBM Plex Mono",monospace;letter-spacing:.12em;color:var(--lilac)}
 .calc-total{margin:10px 0 8px;font:600 clamp(32px,4vw,48px)/1.05 "Inter Tight",sans-serif;letter-spacing:-.03em}
-.calc-sub{margin:0 0 16px;font:400 15px/1.4 "Inter Tight",sans-serif;color:rgba(255,255,255,.75)}
-.calc-sub strong{color:#fff;font-weight:600}
+.calc-sub{margin:0 0 16px;font:600 18px/1.4 "Inter Tight",sans-serif;color:#fff}
+.calc-veil{
+  display:inline-block;filter:blur(9px);user-select:none;pointer-events:none;
+  transform:translateZ(0);
+}
+.lock-ron{display:none}
+.calc:has(input[value="RON"]:checked) .lock-eur{display:none}
+.calc:has(input[value="RON"]:checked) .lock-ron{display:inline}
 .calc-formula{margin:0;font:400 14px/1.45 "Inter Tight",sans-serif;color:rgba(255,255,255,.7)}
 .calc-note{margin:0;max-width:720px;font:400 14px/1.45 "Inter Tight",sans-serif;color:var(--muted)}
 .quote-contact{margin-top:4px}

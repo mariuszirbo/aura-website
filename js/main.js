@@ -103,7 +103,6 @@
   function sendForm(form, thanks) {
     if (form.dataset.sending === "1") return;
     form.dataset.sending = "1";
-    if (form.id === "estimate-form") updateEstimate();
     const lines = fieldLines(form);
     thanks.querySelector("pre").textContent = lines.join("\n");
     const button = form.querySelector('[type="submit"]');
@@ -161,42 +160,5 @@
     }
   });
 
-  const calc = document.querySelector("#estimate-form");
-  function updateEstimate() {
-    if (!calc) return;
-    const months = Number(calc.querySelector('[name="months"]').value);
-    const users = Number(calc.querySelector('[name="users"]').value);
-    const reports = Number(calc.querySelector('[name="reports"]').value);
-    const rateUserInput = calc.querySelector('[name="rateUser"]');
-    const rateReportInput = calc.querySelector('[name="rateReport"]');
-    const currency = (calc.querySelector('[name="currency"]:checked') || {}).value || "EUR";
-    const userBlank = rateUserInput.value.trim() === "";
-    const reportBlank = rateReportInput.value.trim() === "";
-    const totalNode = document.querySelector("#calc-total");
-    const monthNode = document.querySelector("#calc-month");
-    const totalInput = calc.querySelector('[name="total"]');
-    const monthInput = calc.querySelector('[name="perMonth"]');
-    const emptyText = (calc.querySelector("[data-calc-empty]") || {}).textContent || "—";
-    let total = null;
-    if (!userBlank || !reportBlank) {
-      const rateUser = userBlank ? 0 : Number(rateUserInput.value);
-      const rateReport = reportBlank ? 0 : Number(rateReportInput.value);
-      if ([months, users, reports, rateUser, rateReport].every(function (n) { return Number.isFinite(n) && n >= 0; }) && months > 0) {
-        total = users * months * rateUser + reports * rateReport;
-      }
-    }
-    const lang = document.documentElement.lang === "ro" ? "ro-RO" : "en-GB";
-    const shown = total === null ? emptyText.trim() : new Intl.NumberFormat(lang, { style: "currency", currency: currency, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(total);
-    const perMonth = total === null || !months ? "—" : new Intl.NumberFormat(lang, { style: "currency", currency: currency, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(total / months);
-    if (totalNode) totalNode.textContent = shown;
-    if (monthNode) monthNode.textContent = perMonth;
-    if (totalInput) totalInput.value = shown;
-    if (monthInput) monthInput.value = perMonth;
-  }
-  if (calc) {
-    calc.addEventListener("input", updateEstimate);
-    calc.addEventListener("change", updateEstimate);
-    updateEstimate();
-  }
   window.__auraMail = 2;
 })();
