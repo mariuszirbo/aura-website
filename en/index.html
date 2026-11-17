@@ -379,7 +379,10 @@
 <p class="lead">A demonstration, a technical sheet, and a licence sized to your laboratory.</p>
 <p class="contact-mail"><span>Refer enquiries to</span> <a href="mailto:sales@auralab.ro">sales@auralab.ro</a>.</p>
 </div>
+<div data-mail-panel>
 <form id="contact-form" class="form-grid" method="post" action="mailto:sales@auralab.ro" enctype="text/plain" data-mail-subject="A.U.R.A. — demo request" data-who-label="Audience">
+<span class="sr-only" data-mail-subject-text>A.U.R.A. — demo request</span>
+<span class="sr-only" data-who-label-text>Audience</span>
 <div class="seg full">
 <label><input type="radio" name="who" value="laboratory" checked><span>Laboratory</span></label>
 <label><input type="radio" name="who" value="reseller"><span>Reseller</span></label>
@@ -398,14 +401,20 @@
 </select>
 </label>
 <label class="field full"><span>Message</span><textarea name="message" rows="3" placeholder="Studies you prioritise, number of methods…"></textarea></label>
+<label hidden>Company<input name="hp_field" type="text" tabindex="-1" autocomplete="off"></label>
 <p class="form-legal full"><span>This request is not an order. You confirm that you act for an organisation and accept the</span> <a href="/en/terms/">Terms</a> <span>and the</span> <a href="/en/privacy/">Privacy notice</a><span>.</span></p>
 <button class="btn-dark full" type="submit">Contact the commercial team</button>
 </form>
 <div id="contact-thanks" class="thanks" hidden>
-<h3>Your request is ready to send</h3>
-<p>Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</p>
+<h3 data-thanks-title>Your request is ready to send</h3>
+<p data-thanks-body>Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</p>
+<span hidden data-thanks-draft-title>Your request is ready to send</span>
+<span hidden data-thanks-draft-body>Your email app should open a draft to sales@auralab.ro. Nothing is stored on this website. If the draft does not open, copy the text below and send it to sales@auralab.ro.</span>
+<span hidden data-thanks-sent-title>Your request was sent</span>
+<span hidden data-thanks-sent-body>It was sent to sales@auralab.ro. This website does not keep a copy. The text below is what was sent.</span>
 <pre></pre>
 <button type="button" class="btn-dark" data-edit>Edit message</button>
+</div>
 </div>
 </div>
 </div>

@@ -14,8 +14,8 @@ A.U.R.A. is not a laboratory information system. It keeps verification records. 
 - [Resellers](https://auralab.ro/en/resellers/): the partner portal. Licences and seats, with no access to studies, methods or IQC results.
 - [Termeni și condiții](https://auralab.ro/termeni/): textul care prevalează. Licență pentru profesioniști, comanda semnată are prioritate, laboratorul rămâne responsabil, răspunderea este limitată în condițiile legii române.
 - [Terms and conditions](https://auralab.ro/en/terms/): the English text of the same terms. If the two texts differ, the Romanian text prevails.
-- [Confidențialitate](https://auralab.ro/confidentialitate/): site-ul nu stochează formularul. Aplicația este un serviciu separat. În aplicație, laboratorul este operatorul datelor, iar A.U.R.A. este persoană împuternicită.
-- [Privacy](https://auralab.ro/en/privacy/): the website does not store the contact form. The application is a separate service. In the application the laboratory is the controller and A.U.R.A. is the processor.
+- [Confidențialitate](https://auralab.ro/confidentialitate/): formularele se trimit la sales@auralab.ro prin Resend, iar site-ul nu păstrează o copie. Aplicația este un serviciu separat. În aplicație, laboratorul este operatorul datelor, iar A.U.R.A. este persoană împuternicită.
+- [Privacy](https://auralab.ro/en/privacy/): form messages go to sales@auralab.ro through Resend, and the website does not keep a copy. The application is a separate service. In the application the laboratory is the controller and A.U.R.A. is the processor.
 - [Cookie-uri](https://auralab.ro/cookie-uri/): site-ul nu setează cookie-uri și nu afișează un banner.
 - [Cookies](https://auralab.ro/en/cookies/): the website sets no cookies and shows no banner.
 - [Sign in](https://auralab-dev.lovable.app/auth): the A.U.R.A. application. Accounts are handled there, not on this marketing site.
@@ -59,7 +59,7 @@ Revânzătorul lucrează în portalul de parteneri. Portalul vinde licențe și 
 
 Ce face AuraAI: explică aplicația și statisticile folosite într-un studiu; consultă biblioteca APS a laboratorului înainte de a propune o specificație; rulează calcule ilustrative, care nu sunt rezultatul oficial al studiului; redactează o politică numai după ce utilizatorul confirmă conținutul. Ce nu face AuraAI: nu aprobă și nu retrage o politică sau un studiu; nu înlocuiește statisticile oficiale calculate de aplicație; nu inventează specificații de performanță care nu există în biblioteca APS; nu interpretează rezultatele pacienților și nu formulează o opinie clinică.
 
-Solicitările comerciale, de parteneriat și de confidențialitate se trimit la sales@auralab.ro.
+Solicitările comerciale, de parteneriat și de confidențialitate se trimit la sales@auralab.ro. Pagina de revânzători are un calculator de estimare a licenței (luni, utilizatori, rapoarte și tarifele introduse de vizitator) și un formular pentru prezentarea tehnică. Ambele trimit mesajul la sales@auralab.ro prin Resend. Site-ul nu păstrează o copie. Dacă trimiterea nu se finalizează, se deschide o ciornă în aplicația de e-mail a vizitatorului. Estimarea nu este un preț publicat și nu este o comandă.
 
 ## English
 
@@ -110,8 +110,8 @@ Liability for fraud, intent, gross negligence, death, and injury to life, health
 
 A reseller is an independent contractor, not an agent. The partner portal sells licences and seats and has no access to studies, methods or IQC. The reseller must not promise accreditation, clinical performance, or access to laboratory data.
 
-The marketing site sets no cookies, loads fonts from auralab.ro, and does not store the contact form. Personal data in laboratory records, if the organisation uploads any, are controlled by the organisation. The operator processes them as a processor. The service is not a store for patient results. Refer commercial, partnership and privacy enquiries to sales@auralab.ro. The legal name, registration number and registered office of the operator are stated in the order. They are not published on the website yet. There is no public postal address or phone number on this site.
+The marketing site sets no cookies, loads fonts from auralab.ro, and does not keep a copy of a form message. Form messages are delivered to sales@auralab.ro by Resend. Personal data in laboratory records, if the organisation uploads any, are controlled by the organisation. The operator processes them as a processor. The service is not a store for patient results. Refer commercial, partnership and privacy enquiries to sales@auralab.ro. The legal name, registration number and registered office of the operator are stated in the order. They are not published on the website yet. There is no public postal address or phone number on this site.
 
 ## Contact
 
-Refer enquiries to sales@auralab.ro. The contact form on either homepage asks whether the person is a laboratory or a reseller, then asks for name, organisation, work email, role and an optional message. Submitting it opens an email draft to sales@auralab.ro in the visitor's own mail app. The website does not send the form to a server and does not store it. There is no public postal address or phone number on this site.
+Refer enquiries to sales@auralab.ro. The reseller page has a licence estimate (months, users, reports and the rates the visitor enters) and a form that requests the technical presentation. Both send the message to sales@auralab.ro through Resend. The website does not keep a copy. If sending does not complete, the same text opens as a draft in the visitor's own mail app. The estimate is not a published price and not an order. The contact form on either homepage asks whether the person is a laboratory or a reseller, then asks for name, organisation, work email, role and an optional message. There is no public postal address or phone number on this site.
